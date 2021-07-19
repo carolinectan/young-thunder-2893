@@ -35,7 +35,6 @@ RSpec.describe 'the Movie show page' do
 
     visit "/movies/#{hitch.id}"
 
-    expect(page).to have_content("#{eva.name} #{eva.age}")
     expect(page).to have_content("#{eva.name} #{eva.age} #{amber.name} #{amber.age} #{will.name} #{will.age} #{kevin.name} #{kevin.age}")
     # why is the line break in the .each ignored and \n is replaced with a space?
   end
