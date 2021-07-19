@@ -11,3 +11,5 @@
 <% end %>
 
 <p>Average Age of Movie's Actors: <%= @movie.actors.average_age %></p>
+
+<%= button_to "Add New Actor", "/movies/#{@movie.id}/add_new_actor", method: :get %>
